@@ -10,14 +10,19 @@ find_package(Derelict REQUIRED
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/source")
 add_library(DerelictGLES STATIC
     source/derelict/gles/constants2.d
+    source/derelict/gles/constants3.d
     source/derelict/gles/egl.d
     source/derelict/gles/eglext.d
     source/derelict/gles/eglplatform.d
     source/derelict/gles/egltypes.d
     source/derelict/gles/ext2.d
+    source/derelict/gles/ext3.d
     source/derelict/gles/functions2.d
+    source/derelict/gles/functions3.d
     source/derelict/gles/internal.d
     source/derelict/gles/gles2.d
-    source/derelict/gles/types2.d)
+    source/derelict/gles/gles3.d
+    source/derelict/gles/types2.d
+    source/derelict/gles/types3.d)
 target_link_libraries(DerelictGLES
     Derelict::util)
